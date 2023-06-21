@@ -1,0 +1,7 @@
+if &compatible
+  set nocompatible
+endif
+execute 'set runtimepath^='.fnameescape(expand('<sfile>:p:h'))
+if !exists('g:syntax_on')
+  syntax enable
+endif
